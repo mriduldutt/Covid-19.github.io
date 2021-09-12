@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    height:95vh;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body:after{
+    content: "";
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    background: #eb5191;
+    top:0;
+}
+
+body:before{
+    content: "";
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    background: #fff;
+    bottom:0;
+}
+
+
+
+
+.container{
+    z-index: 1;
+    width:75%;
+    margin: 0 auto;
+    border-radius: 24px;
+    background: #f6f5f0;
+    padding: 2%;
+    box-shadow: 0px 10px 6px -8px rgba(0,0,0,0.75);
+}
+
+
+
+.board{
+    column-count: 3;
+    column-gap: 1rem;
+}
+
+.container h2{
+    margin: 0 0 30px;
+    text-align: center;
+}
+
+img#flag{
+    height:20px;
+    width:20px;
+}
+
+.card{
+    width:80%;
+    background:#ccc;
+    padding: 8%;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    color: #fff;
+}
+
+
+.card.a{
+    background:#d3bf09;
+}
+.card.cr{
+    background:#043288;
+}
+.card.r{
+    background:#18aa04;
+}
+.card.ca{
+    background:#bb017d;
+}
+.card.d{
+    background:#e70707;
+}
+.card.t{
+    background:#e99700;
+}
+
+
+.card span{
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+
+.card i{
+    font-size: 3rem;
+}
+
+
+
+/* --------------- (Media Queries) ------------------- */
+
+@media screen and (max-width:1050px){
+    .container{
+        width:75%;
+    }
+
+    .card span{
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width:820px){
+    .container{
+        width:65%;
+    }
+
+    .board{
+        column-count: 2;
+    }
+    .card span{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width:680px){
+    
+    .board{
+        margin-top:40px;
+    }
+    .card span{
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+    }
+}
+
+@media screen and (max-width:500px){
+    .head{
+        margin-top:600px;
+    }
+
+    .board{
+        column-count: 1;
+    }
+}
